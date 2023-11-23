@@ -11,6 +11,7 @@ console.log(array[6]);
 console.log(array[7]);
 console.log(array[8]);
 console.log(array[9]);
+let a = 0;
 //- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
 let hobbit = {title: "The Hobbit", pageCount: 320, genre: "Fantasy"};
 let animalFarm = {title: "Animal Farm", pageCount: 120, genre: "Antiutopia"};

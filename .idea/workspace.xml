@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add hw1">
-      <change afterPath="$PROJECT_DIR$/lesson2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/main.js" afterDir="false" />
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add hw2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson2/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +53,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/yuri/IdeaProjects/html_project",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/yuri/IdeaProjects/js_homeworks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "vcs.Mercurial",
+    "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -82,7 +82,7 @@
       <workItem from="1700508215365" duration="1747000" />
       <workItem from="1700509974147" duration="18000" />
       <workItem from="1700594887275" duration="1853000" />
-      <workItem from="1700682045689" duration="4330000" />
+      <workItem from="1700682045689" duration="5595000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -92,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700509841246</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add hw2">
+      <option name="closed" value="true" />
+      <created>1700686499659</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700686499660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +108,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add hw1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hw1" />
+    <MESSAGE value="add hw2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hw2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
