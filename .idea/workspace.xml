@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="start resolve hw3">
-      <change afterPath="$PROJECT_DIR$/lesson3/additional/additional1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson3/additional/main1.js" afterDir="false" />
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="resolve hw3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson3/additional/main1.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional/main1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1700682045689" duration="5595000" />
       <workItem from="1700763905908" duration="1913000" />
       <workItem from="1700941570436" duration="246000" />
-      <workItem from="1700989269448" duration="11697000" />
+      <workItem from="1700989269448" duration="15403000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -128,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700997473473</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="resolve hw3">
+      <option name="closed" value="true" />
+      <created>1701004150147</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701004150147</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +145,8 @@
     <MESSAGE value="add hw1" />
     <MESSAGE value="add hw2" />
     <MESSAGE value="start resolve hw3" />
-    <option name="LAST_COMMIT_MESSAGE" value="start resolve hw3" />
+    <MESSAGE value="resolve hw3" />
+    <option name="LAST_COMMIT_MESSAGE" value="resolve hw3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

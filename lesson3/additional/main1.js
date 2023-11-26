@@ -151,17 +151,101 @@ for (const element of anythingArray) {
     }
 }
 // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+let emptyArr = [];
+emptyArr[emptyArr.length] = "hello";
+emptyArr[emptyArr.length] = 1;
+emptyArr[emptyArr.length] = true;
+emptyArr[emptyArr.length] = "okten";
+emptyArr[emptyArr.length] = false;
+emptyArr[emptyArr.length] = 2;
+emptyArr[emptyArr.length] = "owu";
+emptyArr[emptyArr.length] = 3;
+emptyArr[emptyArr.length] = "com";
+emptyArr[emptyArr.length] = 4;
+for (const element of emptyArr) {
+    console.log(element);
+}
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+/*for (let j = 1; j <= 10; j++) {
+    console.log(j);
+    document.write(`<div>${j}</div>`);
+}*/
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+/*for (let j = 1; j <= 100; j++) {
+    console.log(j);
+    document.write(`<div>${j}</div>`);
+}*/
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+/*for (let j = 1; j <= 100; j += 2) {
+    console.log(j);
+    document.write(`<div>${j}</div>`);
+}*/
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+/*for (let j = 1; j <= 100; j++) {
+    if (j % 2 === 0) {
+        console.log(j);
+        document.write(`<div>${j}</div>`)
+    }
+}*/
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-//
-//
+/*for (let j = 1; j <= 100; j++) {
+    if (j % 2 !== 0) {
+        console.log(j);
+        document.write(`<div>${j}</div>`)
+    }
+}*/
 //
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+let booksArray = [
+    {title: "Book Title", pages: 312, authors: ["Author Name"], genres: ["Horor"]},
+    {title: "Another Book Title", pages: 229, authors: ["Author Name", "Another Name"], genres: ["Fantacy", "Action", "Roman"]},
+    {title: "Very Long Book Title", pages: 129, authors: ["Some Name", "SomeAuthor Name"], genres: ["Historic"]},
+    {title: "Big Book", pages: 1129, authors: ["Some Name", "Another Name", "Other Name"], genres: ["Adventure"]},
+    {title: "Some Book", pages: 422, authors: ["Some Name"], genres: ["Some"]}
+]
 // -знайти наібльшу книжку.
+let biggestBook = booksArray[0];
+for (const book of booksArray) {
+    if (biggestBook.pages < book.pages) {
+        biggestBook = book;
+    }
+}
+console.log(biggestBook.title);
 // - знайти книжку/ки з найбільшою кількістю жанрів
+let biggestGenresBooksArr = [];
+let biggestGenresBook = booksArray[0];
+for (const book of booksArray) {
+    if (biggestGenresBook.genres.length < book.genres.length) {
+        biggestGenresBook = book;
+    }
+}
+for (const book of booksArray) {
+    if (biggestGenresBook.genres.length === book.genres.length) {
+        biggestGenresBooksArr[biggestGenresBooksArr.length] = book;
+    }
+}
+console.log(biggestGenresBooksArr);
 // - знайти книжку/ки з найдовшою назвою
+let longestTitleBook = booksArray[0];
+for (const book of booksArray) {
+    if (longestTitleBook.title.length < book.title.length) {
+        longestTitleBook = book;
+    }
+}
+console.log(longestTitleBook);
 // - знайти книжку/ки які писали 2 автори
+let twoAuthorsBook = [];
+for (const book of booksArray) {
+    if (book.authors.length === 2) {
+        twoAuthorsBook[twoAuthorsBook.length] = book;
+    }
+}
+console.log(twoAuthorsBook);
 // - знайти книжку/ки які писав 1 автор
+let singleAuthorsBook = [];
+for (const book of booksArray) {
+    if (book.authors.length === 1) {
+        singleAuthorsBook[singleAuthorsBook.length] = book;
+    }
+}
+console.log(singleAuthorsBook);
