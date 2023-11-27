@@ -1,0 +1,12 @@
+.product-image {
+    width: 20vw;
+}
+.product-title > h3 {
+    margin: 0;
+}
+.user-box > p {
+    margin: 0;
+}
+.user-box {
+    margin-bottom: 10px;
+}
