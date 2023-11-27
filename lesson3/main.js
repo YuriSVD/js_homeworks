@@ -1,27 +1,27 @@
 //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-/*for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     document.write(`<div>
 <p>Some text</p>
 </div>`);
-}*/
+}
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-/*for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
     document.write(`<div>
 <p>Another text ${i}</p>
 </div>`)
-}*/
+}
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-/*let i = 0;
+let i = 0;
 while (i < 20) {
     document.write(`<h1>Some text</h1>`);
     i++;
-}*/
+}
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-/*i = 0;
+i = 0;
 while (i < 20) {
     document.write(`<h1>Another text ${i}</h1>`);
     i++;
-}*/
+}
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
@@ -81,9 +81,9 @@ let products = [
 // </div>
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
 for (const product of products) {
-    document.write(`<div>
-<h3>${product.title}. ${product.price}</h3>
-<img src=${product.image} alt="image"> 
+    document.write(`<div class="product-title">
+<h3>${product.title} - ${product.price}</h3>
+<img src=${product.image} alt="image" class="product-image"> 
 </div>`)
 }
 // --------------------
@@ -105,36 +105,36 @@ let users = [
 //  - користувачів зі статусом true
 for (const user of users) {
     if (user.status) {
-        document.write("<div>");
+        document.write(`<div class="user-box">`);
         for (const userKey in user) {
             document.write(`<p>
             ${userKey}: ${user[userKey]}
         </p>`)
         }
-        document.write("</div>");
+        document.write(`</div>`);
     }
 }
 //  - користувачів зі статусом false
 for (const user of users) {
     if (!user.status) {
-        document.write("<div>");
+        document.write(`<div class="user-box">`);
         for (const userKey in user) {
             document.write(`<p>
             ${userKey}: ${user[userKey]}
         </p>`)
         }
-        document.write("</div>");
+        document.write(`</div>`);
     }
 }
 //  - користувачів які старші за 30 років
 for (const user of users) {
     if (user.age > 30) {
-        document.write("<div>");
+        document.write(`<div class="user-box">`);
         for (const userKey in user) {
             document.write(`<p>
             ${userKey}: ${user[userKey]}
         </p>`)
         }
-        document.write("</div>");
+        document.write(`</div>`);
     }
 }

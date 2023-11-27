@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="resolve hw3">
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add resolve hw3 additional1">
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/additional2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/additional3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/main2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/main3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/additional/main1.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional/main1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
@@ -54,7 +59,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/yuri/IdeaProjects/js_homeworks&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/yuri/IdeaProjects/html_project/ukrposhta&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -85,7 +91,8 @@
       <workItem from="1700682045689" duration="5595000" />
       <workItem from="1700763905908" duration="1913000" />
       <workItem from="1700941570436" duration="246000" />
-      <workItem from="1700989269448" duration="15403000" />
+      <workItem from="1700989269448" duration="18881000" />
+      <workItem from="1701024996537" duration="3800000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -135,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701004150147</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add resolve hw3 additional1">
+      <option name="closed" value="true" />
+      <created>1701007909444</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701007909444</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +161,8 @@
     <MESSAGE value="add hw2" />
     <MESSAGE value="start resolve hw3" />
     <MESSAGE value="resolve hw3" />
-    <option name="LAST_COMMIT_MESSAGE" value="resolve hw3" />
+    <MESSAGE value="add resolve hw3 additional1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add resolve hw3 additional1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

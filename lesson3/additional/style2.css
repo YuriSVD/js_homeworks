@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+.users-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-box {
+    width: 50vw;
+}
+.wrap {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+.post-card {
+    width: 20vw;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
