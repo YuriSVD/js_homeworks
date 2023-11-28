@@ -228,13 +228,23 @@ console.log(biggestGenresBooksArr);
 // - знайти книжку/ки з найдовшою назвою
 let longestTitleBookArr = [];
 let longestTitleBook = booksArray[0];
-for (const book of booksArray) {
+/*for (const book of booksArray) {
     if (longestTitleBook.title.length < book.title.length) {
         longestTitleBook = book;
     }
 }
 for (const book of booksArray) {
     if (longestTitleBook.title.length === book.title.length) {
+        longestTitleBookArr[longestTitleBookArr.length] = book;
+    }
+}
+console.log(longestTitleBookArr);*/
+for (const book of booksArray) {
+    if (longestTitleBook.title.length < book.title.length) {
+        longestTitleBook = book;
+        longestTitleBookArr = [];
+        longestTitleBookArr[longestTitleBookArr.length] = book;
+    } else if (longestTitleBook.title.length === book.title.length) {
         longestTitleBookArr[longestTitleBookArr.length] = book;
     }
 }
