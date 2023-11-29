@@ -87,11 +87,11 @@ const users = [
 function usersPrinter(array) {
     document.write(`<div>`);
     for (const element of array) {
-        document.write(`<div>
-            <p>id: ${element.id}</p>
-            <p>name: ${element.name}</p>
-            <p>age: ${element.age}</p>
-        </div>`)
+        document.write(`<div class="user-box">`);
+        for (const elementKey in element) {
+            document.write(`<p>${elementKey}: ${element[elementKey]}</p>`)
+        }
+        document.write(`</div>`);
     }
     document.write(`</div>`);
 }

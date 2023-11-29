@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add style for hw3">
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add alt resolve for find books for hw3Ad1">
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/additional4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional/main4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/additional/main1.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional/main1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -91,7 +92,9 @@
       <workItem from="1700989269448" duration="18881000" />
       <workItem from="1701024996537" duration="3800000" />
       <workItem from="1701105135035" duration="8064000" />
-      <workItem from="1701195496846" duration="337000" />
+      <workItem from="1701195496846" duration="653000" />
+      <workItem from="1701199903051" duration="1798000" />
+      <workItem from="1701285076537" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -165,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701118376352</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add alt resolve for find books for hw3Ad1">
+      <option name="closed" value="true" />
+      <created>1701196040048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701196040049</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +189,8 @@
     <MESSAGE value="resolve hw3" />
     <MESSAGE value="add resolve hw3 additional1" />
     <MESSAGE value="add style for hw3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add style for hw3" />
+    <MESSAGE value="add alt resolve for find books for hw3Ad1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alt resolve for find books for hw3Ad1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
