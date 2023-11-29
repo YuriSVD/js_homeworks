@@ -136,9 +136,9 @@ console.log(swap(array, 2, 4));
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     for (const element of currencyValues) {
         if (element.currency === exchangeCurrency) {
-            return sumUAH * element.value;
+            return (sumUAH / element.value).toFixed(2);
         }
     }
 }
 
-console.log(exchange(1000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], "USD"));;
+console.log(exchange(1000, [{currency: 'USD', value: 40.21}, {currency: 'EUR', value: 42}], "USD"));;
