@@ -14,22 +14,22 @@ console.log("HELLO WORLD".toLowerCase());
 console.log("LOREM IPSUM".toLowerCase());
 console.log("JAVASCRIPT IS COOL".toLowerCase());
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-let str = " dirty string   ";
+const str = " dirty string   ";
 console.log(str.trim());
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
 //     let str = 'Ревуть воли як ясла повні';
 //     let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
-let string = "Ревуть воли як ясла повні";
+const string = "Ревуть воли як ясла повні";
 console.log(string.split(" "));
 // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map  перетворити всі об'єкти в масиві на стрінгові.
-let numbers = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
-let intToStringArray = numbers.map(value => "" + value);
+const numbers = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
+const intToStringArray = numbers.map(value => "" + value);
 console.log(intToStringArray);
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
 // let nums = [11,21,3];
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
-let sortNumber = (array, direction) => {
+const sortNumber = (array, direction) => {
     if (direction === "ascending") {
         array.sort((a, b) => a - b);
     } else if (direction === "descending") {
@@ -38,12 +38,13 @@ let sortNumber = (array, direction) => {
         console.log("something wrong!!!")
     }
     return array;
-}
+} // або тернаркою, але не така гнучка як в першому варіанті
+//const sortNumber = (array, direction) => direction === "ascending" ? array.sort((a, b) => a - b) : array.sort((a, b) => b - a);
 console.log(sortNumber(numbers, "ascending"));
 //
 // ==========================
 // - є масив
- let coursesAndDurationArray = [
+ const coursesAndDurationArray = [
      {title: 'JavaScript Complex', monthDuration: 5},
      {title: 'Java Complex', monthDuration: 6},
      {title: 'Python Complex', monthDuration: 6},
@@ -60,7 +61,7 @@ console.log(coursesAndDurationArray.map((value, index) => {
     return  {
         id: ++index,
         ...value
-    }}));
+    }})); // цей варіант мені більше подобається ніж {value.id = ++index; return value}. Але все залежить від того чи потрібно залишати масив з яким працюємо незмінним чи ні.
 //  =========================
 //  описати колоду карт (від 6 до туза без джокерів)
 //
@@ -69,7 +70,7 @@ console.log(coursesAndDurationArray.map((value, index) => {
 //     value: '', // '6'-'10', 'ace','jack','queen','king','joker'
 //     color:'', // 'red','black'
 // }
-let deckOfCards = [
+const deckOfCards = [
     {value: "6", cardSuit: "spades", color: "black"},
     {value: "7", cardSuit: "spades", color: "black"},
     {value: "8", cardSuit: "spades", color: "black"},
@@ -118,7 +119,7 @@ console.log(deckOfCards.filter(value => value.cardSuit === "diamonds"));
 //  - всі трефи від 9 та більше
 console.log(deckOfCards.filter(value => value.cardSuit === "clubs").filter(value => value.value.length > 1 || value.value === "9"));
 // =========================
-let reduce = deckOfCards.reduce((accumulator, card) => {
+const reduce = deckOfCards.reduce((accumulator, card) => {
     if (card.cardSuit === "spades") {
         accumulator.spades.push(card);
     } else if (card.cardSuit === "clubs") {
@@ -140,7 +141,7 @@ console.log(reduce);
 // }
 // =========================
 // взяти з arrays.js (який лежить в папці 2023 plan) масив coursesArray
-let coursesArray = [
+const coursesArray = [
     {
         title: 'JavaScript Complex',
         monthDuration: 5,
