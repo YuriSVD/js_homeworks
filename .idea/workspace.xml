@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add resolve 5,6,8">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson9/main.js" afterDir="false" />
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="add resolve 9, update resolve 5">
+      <change afterPath="$PROJECT_DIR$/lesson10/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson6/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson8/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson8/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Lesson8/main.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/lesson10/main.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/lesson6/main.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/lesson9/main.js" root0="SKIP_INSPECTION" />
   </component>
@@ -56,24 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/yuri/IdeaProjects/js_homeworks&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/yuri/IdeaProjects/js_homeworks",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "inlay.hints",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="js_homeworks" />
@@ -106,7 +108,8 @@
       <workItem from="1701507717287" duration="26500000" />
       <workItem from="1701635337211" duration="213000" />
       <workItem from="1701711246032" duration="2121000" />
-      <workItem from="1701802495477" duration="9549000" />
+      <workItem from="1701802495477" duration="35352000" />
+      <workItem from="1702487473657" duration="4337000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -212,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701617644826</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add resolve 9, update resolve 5">
+      <option name="closed" value="true" />
+      <created>1701895547555</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701895547555</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +240,8 @@
     <MESSAGE value="add style for resolve4" />
     <MESSAGE value="fixed bug in function exchange" />
     <MESSAGE value="add resolve 5,6,8" />
-    <option name="LAST_COMMIT_MESSAGE" value="add resolve 5,6,8" />
+    <MESSAGE value="add resolve 9, update resolve 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add resolve 9, update resolve 5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

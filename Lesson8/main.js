@@ -21,7 +21,6 @@ let users = [
     new User(2, "Kawhi", "Leonard", "terminator@gmail.com", "+38223450935"),
     new User(1, "Devin", "Booker", "book1@gmail.com", "+38228410935"),
 ];
-console.log(users);
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 console.log(users.filter(value => value.id % 2 === 0));
 // - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
@@ -50,7 +49,6 @@ let clients = [
     new Client(5, "Ibrahima", "Konaté", "konaté@gmail.com", "+38015353751", ["1", "2", "3", "4", "5"]),
     new Client(2, "Joe", "Gomez", "gomez@gmail.com", "+38021333555", ["1", "2"])
 ]
-console.log(clients);
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 console.log(clients.sort((a, b) => a.order.length - b.order.length));
 //
@@ -169,7 +167,6 @@ let cinderellaArray = [
     new Cinderella("Kristina", 25, 37),
     new Cinderella("Vlada", 26, 41)
 ];
-console.log(cinderellaArray);
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 function Prince(name, age, shoe_size) {
     this.name = name;
