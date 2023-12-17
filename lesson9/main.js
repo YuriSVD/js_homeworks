@@ -6,39 +6,48 @@
 const div = document.createElement("div");
 div.innerText = "some text";
 div.classList.add("wrap", "collapse", "alpha", "beta");
+div.style.background = "silver";
+div.style.fontSize = "30px";
+div.style.color = "blue";
 document.body.appendChild(div);
 document.body.appendChild(div.cloneNode(true));
 // - Є масив:
 // ['Main','Products','About us','Contacts']
 const array = ['Main', 'Products', 'About us', 'Contacts'];
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
-const ul = document.createElement("ul");
-for (const element of array) {
-    const li = document.createElement("li");
-    li.innerText = element;
-    ul.appendChild(li);
+const listOfArrayItem = (array) => {
+    const ul = document.createElement("ul");
+    for (const element of array) {
+        const li = document.createElement("li");
+        li.innerText = element;
+        ul.appendChild(li);
+    }
+    document.body.appendChild(ul);
 }
-document.body.appendChild(ul);
+listOfArrayItem(array);
 // - Є масив
- let coursesAndDurationArray = [
-     {title: 'JavaScript Complex', monthDuration: 5},
-     {title: 'Java Complex', monthDuration: 6},
-     {title: 'Python Complex', monthDuration: 6},
-     {title: 'QA Complex', monthDuration: 4},
-     {title: 'FullStack', monthDuration: 7},
-     {title: 'Frontend', monthDuration: 4}
- ];
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
-for (const element of coursesAndDurationArray) {
-    const course = document.createElement("div");
-    for (const elementKey in element) {
-        const p = document.createElement("p");
-        p.innerText = `${elementKey}: ${element[elementKey]}`;
-        course.appendChild(p);
+const divOfArrayItem = (array) => {
+    for (const element of array) {
+        const course = document.createElement("div");
+        for (const elementKey in element) {
+            const p = document.createElement("p");
+            p.innerText = `${elementKey}: ${element[elementKey]}`;
+            course.appendChild(p);
+        }
+        document.body.appendChild(course);
     }
-    document.body.appendChild(course);
-}
+};
+divOfArrayItem(coursesAndDurationArray);
 // =========================
 //
 // - Є масив
@@ -53,18 +62,21 @@ for (const element of coursesAndDurationArray) {
 //
 // За допомоги скріпта для кожного елементу масиву зробити <div class='item'> ,  в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'> з monthDuration елементу.
 // Завдання робити через цикли.
-for (const element of coursesAndDurationArray) {
-    const course = document.createElement("div");
-    course.classList.add("item");
-    const h1 = document.createElement("h1");
-    h1.classList.add("heading");
-    h1.innerText = element.title;
-    const p = document.createElement("p");
-    p.classList.add("description");
-    p.innerText = element.monthDuration;
-    course.append(h1, p);
-    document.body.appendChild(course);
+const divWirhHAndPFromArray = (array) => {
+    for (const element of array) {
+        const course = document.createElement("div");
+        course.classList.add("item");
+        const h1 = document.createElement("h1");
+        h1.classList.add("heading");
+        h1.innerText = element.title;
+        const p = document.createElement("p");
+        p.classList.add("description");
+        p.innerText = element.monthDuration;
+        course.append(h1, p);
+        document.body.appendChild(course);
+    }
 }
+divWirhHAndPFromArray(coursesAndDurationArray);
 // ==========================
 //
 // - є масив simpsons, котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
@@ -107,19 +119,23 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
-for (const simpson of simpsons) {
-    const member = document.createElement("div");
-    member.classList.add("member");
-    const img = document.createElement("img");
-    img.classList.add("photo");
-    img.src = simpson.photo;
-    const h1 = document.createElement("h1");
-    h1.innerText = simpson.name + " " + simpson.surname;
-    const p = document.createElement("p");
-    p.innerText = simpson.info;
-    member.append(img, h1, p);
-    document.body.appendChild(member);
-}
+const simpsonDiv = (array) => {
+    array.map(simpson => {
+        const member = document.createElement("div");
+        member.classList.add("member");
+        const img = document.createElement("img");
+        img.classList.add("photo");
+        img.src = simpson.photo;
+        img.style.height = "300px";
+        const h1 = document.createElement("h1");
+        h1.innerText = simpson.name + " " + simpson.surname;
+        const p = document.createElement("p");
+        p.innerText = simpson.info;
+        member.append(img, h1, p);
+        document.body.appendChild(member);
+    })
+};
+simpsonDiv(simpsons);
 // =========================
 // Цикл в циклі
 // - Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
@@ -194,26 +210,29 @@ let coursesArray = [
 ];
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
-for (const element of coursesArray) {
-    const course = document.createElement("div");
-    for (const elementKey in element) {
-        let info;
-        if (elementKey === "title") {
-            info = document.createElement("h1");
-            info.innerText = element[elementKey];
-        } else if (Array.isArray(element[elementKey])) {
-            const array = element[elementKey];
-            info = document.createElement("ul");
-            for (const element of array) {
-                const li = document.createElement("li");
-                li.innerText = element;
-                info.appendChild(li);
+const coursesDiv = (array) => {
+    for (const element of array) {
+        const course = document.createElement("div");
+        for (const elementKey in element) {
+            let info;
+            if (elementKey === "title") {
+                info = document.createElement("h1");
+                info.innerText = element[elementKey];
+            } else if (Array.isArray(element[elementKey])) {
+                const array = element[elementKey];
+                info = document.createElement("ul");
+                for (const element of array) {
+                    const li = document.createElement("li");
+                    li.innerText = element;
+                    info.appendChild(li);
+                }
+            } else if (typeof element[elementKey] === "number") {
+                info = document.createElement("p");
+                info.innerText = `${elementKey}: ${element[elementKey]}`;
             }
-        } else if (typeof element[elementKey] === "number") {
-            info = document.createElement("p");
-            info.innerText = `${elementKey}: ${element[elementKey]}`;
+            course.appendChild(info);
         }
-        course.appendChild(info);
+        document.body.appendChild(course);
     }
-    document.body.appendChild(course);
 }
+coursesDiv(coursesArray);
