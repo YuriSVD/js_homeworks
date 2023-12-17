@@ -251,7 +251,7 @@ const moneyForSessions = (money) => {
     if (!localStorage.getItem("money")) {
         localStorage.setItem("money", money);
     }
-    onunload = (ev) => {
+    onunload = (ev) => { // onload на стадії deprecated, альтернатива XRSession.onend на стадії еxperimental Intellij не підтягує її(коли ти пишеш і тобі кидається рекомендації), пишеш в наглу - браузер не розуміє (Chrome)
         if (ev.timeStamp > 10000) {
             money += 10;
             localStorage.setItem("money", money);
