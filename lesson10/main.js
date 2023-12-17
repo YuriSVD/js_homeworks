@@ -57,26 +57,23 @@ counterOfSessions();
 // ==========================
 // Є сторінка index.html (назва довільна), при відвідуванні якої в локальне сховще, в масив sessions зберігається інформація про дату та час відвідування сторінки. Є ще сторінка sessions.html (назва довільна), при відвідуванні якої потрібно відмалювати всю інформацію про відвідування сторінки index.html. Інфу НЕ виводити в консоль, а побудувати дом структуру під кожну сессію
 // =========================
-if (!localStorage.getItem("sessions")) {
-    localStorage.setItem("sessions", JSON.stringify([]));
+const sessoinsOfPage = () => {
+    if (!localStorage.getItem("sessions")) {
+        localStorage.setItem("sessions", JSON.stringify([]));
+    }
+    let sessions = JSON.parse(localStorage.getItem("sessions"));
+    sessions.push(new Date());
+    localStorage.setItem("sessions", JSON.stringify(sessions));
 }
-let sessions = JSON.parse(localStorage.getItem("sessions"));
-sessions.push(new Date());
-localStorage.setItem("sessions", JSON.stringify(sessions));
-/*localStorage.setItem("session", JSON.stringify([]));
-let session = JSON.parse(localStorage.getItem("session"));
-window.onmousemove = function (ev) {
-    session.push({coordX: ev.clientX, coordY: ev.clientY});
-    localStorage.setItem("session", JSON.stringify(session));
-};*/
+sessoinsOfPage();
 // зробити масив на 100 об'єктів та дві кнопки prev next
-// при завантажені сторінки з'являються перші 10 об'єктів.
-// При натисканні next виводяться настпні 10 об'єктів
-// При натисканні prev виводяться попередні 10 об'єктів
 const array = [];
 for (let i = 1; i <= 100; i++) {
     array.push({id: i});
 }
+// при завантажені сторінки з'являються перші 10 об'єктів.
+// При натисканні next виводяться настпні 10 об'єктів
+// При натисканні prev виводяться попередні 10 об'єктів
 const pagination = (array, fist, last) => {
     if (last > array.length) {
         last = array.length;
@@ -145,9 +142,33 @@ const paginationOfArray = (array) => {
 }
 let fistElement = 0;
 paginationOfArray(array);
-//
 // - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
-//togle
+const invisibleDiv = (text) => {
+    const div = document.createElement("div");
+    const p = document.createElement("p");
+    const button = document.createElement("button");
+    p.innerText = text;
+    p.setAttribute("id", "text");
+    p.setAttribute("class", "visibility");
+    button.innerText = "Make text invisible";
+    div.append(p, button);
+    document.body.appendChild(div);
+    button.onclick = function (ev) {
+        const element = document.getElementById("text");
+        element.classList.toggle("visibility");
+        const className = element.className;
+        if (!className) {
+            element.style.color = "white";
+            element.innerText = "I am invisible"; // можна і пусту стрінгу, але, мені здається, що так красивіше.
+            button.innerText = "Make text visible";
+        } else {
+            element.style.color = "black";
+            element.innerText = "I am visible";
+            button.innerText = "Make text invisible";
+        }
+    }
+};
+invisibleDiv("I am visible");
 //
 // - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 const enterForAdult = () => {
@@ -168,7 +189,7 @@ const enterForAdult = () => {
         if (input.value < 18) {
             alert("Sorry, but this content not for you, baby");
         } else {
-            location.href = "https://www.google.com.ua/"; // у консолі зявляєится помилка, не знаю чи щось наговнокодив чи якийсь плагін матюкається
+            window.open("https://www.google.com.ua/");
         }
         input.value = "";
         button.disabled = true;
@@ -221,8 +242,22 @@ const createTable = () => {
 }
 createTable();
 // (Додатковачастина для завдання)
-//
 // *** (подібне було вище, але...будьте уважні в другій частині) створити сторінку з довільним блоком, в середині якого є значення "100грн"
 // при перезавантаженні сторінки до значаення додається по 10грн, але !!!
 //  зміна ціни відбувається тільки на перезавантаження, які відбулись пізніше ніж 10 секунд після попереднього.
 //  При перезавантаженні, яке відбулось раніше ніж минуло 10 секунд - нічого не відбувається
+const moneyForSessions = (money) => {
+    const div = document.createElement("div");
+    if (!localStorage.getItem("money")) {
+        localStorage.setItem("money", money);
+    }
+    onunload = (ev) => {
+        if (ev.timeStamp > 10000) {
+            money += 10;
+            localStorage.setItem("money", money);
+        }
+    }
+    div.innerText = money + " грн";
+    document.body.appendChild(div);
+}
+moneyForSessions(+localStorage.getItem("money") || 100);
