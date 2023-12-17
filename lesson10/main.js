@@ -95,10 +95,10 @@ const pagination = (array, fist, last) => {
 const paginationOfArray = (array) => {
     let div = document.createElement("div");
     div.style.width = "100px";
-    div.style.border = "1px solid black";
     let numberOfList = document.createElement("p");
     numberOfList.setAttribute("id", "numberOfList");
     numberOfList.innerText = 1;
+    numberOfList.style.margin = "0 5px";
     const divWithItems = document.createElement("div");
     divWithItems.style.display = "flex";
     divWithItems.style.flexDirection = "column";
