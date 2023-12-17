@@ -176,6 +176,8 @@ const enterForAdult = () => {
     const input = document.createElement("input");
     input.type = "number";
     input.placeholder = "enter your age";
+    input.min = 1;
+    input.max = 99;
     const button = document.createElement("button");
     button.innerText = "enter";
     button.disabled = true;
@@ -204,9 +206,11 @@ const createTable = () => {
     const numbersOfLines = document.createElement("input");
     numbersOfLines.type = "number";
     numbersOfLines.placeholder = "enter number of lines"
+    numbersOfLines.min = 1;
     const numbersOfColums = document.createElement("input");
     numbersOfColums.type = "number";
     numbersOfColums.placeholder = "enter number of colums";
+    numbersOfColums.min = 1;
     const textInTable = document.createElement("input");
     textInTable.type = "text";
     textInTable.placeholder = "enter text";
