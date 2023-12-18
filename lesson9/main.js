@@ -3,25 +3,28 @@
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 // - додати цей блок в body.
 // - клонувати його повністю, та додати клон в body.
-const div = document.createElement("div");
-div.innerText = "some text";
-div.classList.add("wrap", "collapse", "alpha", "beta");
-div.style.background = "silver";
-div.style.fontSize = "30px";
-div.style.color = "blue";
-document.body.appendChild(div);
-document.body.appendChild(div.cloneNode(true));
+const createDivWithClone = () => {
+    const div = document.createElement("div");
+    div.innerText = "some text";
+    div.classList.add("wrap", "collapse", "alpha", "beta");
+    div.style.background = "silver";
+    div.style.fontSize = "30px";
+    div.style.color = "blue";
+    document.body.appendChild(div);
+    document.body.appendChild(div.cloneNode(true));
+}
+createDivWithClone();
 // - Є масив:
 // ['Main','Products','About us','Contacts']
 const array = ['Main', 'Products', 'About us', 'Contacts'];
 // Зробити ul в середині якої будуть лежати елементи масиву (кожен в своєму li)
 const listOfArrayItem = (array) => {
     const ul = document.createElement("ul");
-    for (const element of array) {
+    array.map(value => {
         const li = document.createElement("li");
-        li.innerText = element;
+        li.innerText = value;
         ul.appendChild(li);
-    }
+    })
     document.body.appendChild(ul);
 }
 listOfArrayItem(array);
@@ -131,6 +134,7 @@ const simpsonDiv = (array) => {
         h1.innerText = simpson.name + " " + simpson.surname;
         const p = document.createElement("p");
         p.innerText = simpson.info;
+        p.style.textAlign = "justify";
         member.append(img, h1, p);
         document.body.appendChild(member);
     })
