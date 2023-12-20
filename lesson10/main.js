@@ -18,9 +18,9 @@ const userForm = () => {
     const button = document.createElement("button");
     button.innerText = "Create user";
     button.disabled = true;
-    form.addEventListener("input", function (ev) {
+    form.addEventListener("input", function () {
         inputName.value && inputSurname.value && inputAge.value ? button.disabled = false : button.disabled = true;
-    })
+    });
     button.onclick = function (ev) {
         ev.preventDefault();
         const div = document.createElement("div");
@@ -81,7 +81,6 @@ const pagination = (array, fist, last) => {
         const number = 10 - array.length % 10;
         fist += number;
         last += number;
-        console.log("fuck");
     }
     const paginationDiv = document.getElementById("paginationDiv");
     paginationDiv.innerHTML = "";
@@ -153,7 +152,7 @@ const invisibleDiv = (text) => {
     button.innerText = "Make text invisible";
     div.append(p, button);
     document.body.appendChild(div);
-    button.onclick = function (ev) {
+    button.onclick = function () {
         const element = document.getElementById("text");
         element.classList.toggle("visibility");
         const className = element.className;
@@ -183,7 +182,7 @@ const enterForAdult = () => {
     button.disabled = true;
     form.append(input, button);
     document.body.appendChild(form);
-    form.addEventListener("input", function (ev) {
+    form.addEventListener("input", function () {
         input ? button.disabled = false : button.disabled = true;
     })
     button.onclick = function (ev) {
@@ -219,7 +218,7 @@ const createTable = () => {
     buttonTable.disabled = true;
     tableForm.append(numbersOfLines, numbersOfColums, textInTable, buttonTable);
     document.body.appendChild(tableForm);
-    tableForm.addEventListener("input", function (ev) {
+    tableForm.addEventListener("input", function () {
         numbersOfLines.value && numbersOfColums.value && textInTable.value ? buttonTable.disabled = false : buttonTable.disabled = true;
     })
     buttonTable.onclick = function (ev) {
