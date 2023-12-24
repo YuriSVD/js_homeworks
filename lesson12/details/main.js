@@ -20,44 +20,57 @@ console.log(user);
         }
     }
 };*/ // дуже просто
-const userPrinter = (user, number, isInnerDiv) => {
-    const elementsByClassName = document.querySelectorAll(".wrapper");
+const userPrinter = (user, userDiv) => {
     for (const userKey in user) {
         const data = user[userKey];
         const div = document.createElement("div");
-        div.style.marginLeft = number + "px";
-        //div.style.border = "solid 1px black";
-        div.style.display = "flex";
+        div.classList.add("item");
         const keyDiv = document.createElement("div");
-        div.style.alignItems = "center";
+        keyDiv.classList.add("keyDiv");
         const valueDiv = document.createElement("div");
-        valueDiv.style.marginLeft = "20px";
+        valueDiv.classList.add("valueDiv");
+        keyDiv.innerText = userKey + ":";
+        if (typeof data === "object") {
+            const innerDiv = document.createElement("div");
+            div.append(keyDiv, innerDiv);
+            userDiv.appendChild(div);
+            userPrinter(data, innerDiv);
+        } else {
+            valueDiv.innerText = data;
+            div.append(keyDiv, valueDiv);
+            userDiv.appendChild(div);
+        }
+    }
+};
+/*const userPrinter = (user, isInnerDiv, userDiv) => {
+    userDiv.style.display = "flex";
+    //const wrap = document.createElement("div");
+    const keysDiv = document.createElement("div");
+    const valuesDiv = document.createElement("div");
+    userDiv.append(keysDiv, valuesDiv);
+    const elementsByClassName = document.querySelectorAll(".wrapper");
+    for (const userKey in user) {
+        const data = user[userKey];
+        const keyDiv = document.createElement("div");
+        const valueDiv = document.createElement("div");
         if (typeof data === "object") {
             const innerDiv = document.createElement("div");
             innerDiv.classList.add("wrapper");
-            keyDiv.innerText = `${userKey}:`;
-            div.append(keyDiv, innerDiv);
-            const margin = 20;
-            if (!!elementsByClassName.length && isInnerDiv) {
-                const lastElement = elementsByClassName[elementsByClassName.length - 1];
-                lastElement.appendChild(div);
-            } else {
-                document.body.appendChild(div);
-            }
+            keyDiv.innerText = userKey + ":";
+            keysDiv.appendChild(keyDiv);
+            valuesDiv.appendChild(innerDiv);
             isInnerDiv = true
-            userPrinter(data, margin, isInnerDiv);
+            userPrinter(data, isInnerDiv, innerDiv);
         } else {
             keyDiv.innerText = userKey + ":";
             valueDiv.innerText = data;
-            div.append(keyDiv, valueDiv);
-            if (!!elementsByClassName.length) {
-                const lastElement = elementsByClassName[elementsByClassName.length - 1];
-                lastElement.appendChild(div);
-            } else {
-                document.body.appendChild(div);
-            }
+            keysDiv.appendChild(keyDiv);
+            valuesDiv.appendChild(valueDiv);
         }
     }
     isInnerDiv = false;
-};
-userPrinter(user, 0, false);
+};*/
+const userInfo = document.createElement("div");
+userInfo.classList.add("userInfo");
+userPrinter(user, userInfo);
+document.body.appendChild(userInfo);

@@ -1,0 +1,12 @@
+.item {
+    /*border: black 1px solid;*/
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+}
+.keyDiv {
+    width: 11vw;
+}
+.valueDiv {
+    width: 40vw;
+}
