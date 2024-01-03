@@ -1,4 +1,4 @@
-const url = new URL("http://jsonplaceholder.typicode.com/users");
+const url = new URL("https://jsonplaceholder.typicode.com/users");
 fetch(url)
     .then(value => value.json())
     .then(value => {

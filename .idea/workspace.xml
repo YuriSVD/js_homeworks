@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="update resolve 10">
-      <change afterPath="$PROJECT_DIR$/lesson12/details/style.css" afterDir="false" />
+    <list default="true" id="5099b17d-a2e2-4607-834a-6a45641c93f5" name="Changes" comment="update resolve 12">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/details/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/details/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson12/details/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/details/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson12/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +58,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "js.last.introduce.type": "CONST",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/yuri/IdeaProjects/html_project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/yuri/IdeaProjects/js_homeworks&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lesson12/details" />
@@ -138,6 +135,13 @@
       <workItem from="1702824732021" duration="27218000" />
       <workItem from="1703265204214" duration="22505000" />
       <workItem from="1703405801998" duration="12642000" />
+      <workItem from="1703418654544" duration="697000" />
+      <workItem from="1703926672901" duration="1891000" />
+      <workItem from="1703928688864" duration="89000" />
+      <workItem from="1704022154150" duration="91000" />
+      <workItem from="1704022814797" duration="125000" />
+      <workItem from="1704027645036" duration="317000" />
+      <workItem from="1704039669848" duration="788000" />
     </task>
     <task id="LOCAL-00001" summary="add hw1">
       <option name="closed" value="true" />
@@ -323,7 +327,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703409087719</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update resolve 12">
+      <option name="closed" value="true" />
+      <created>1703418671527</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1703418671527</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +357,8 @@
     <MESSAGE value="finish resolve 10" />
     <MESSAGE value="update resolve 9" />
     <MESSAGE value="update resolve 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="update resolve 10" />
+    <MESSAGE value="update resolve 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update resolve 12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
